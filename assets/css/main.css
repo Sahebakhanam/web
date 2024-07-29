@@ -78,7 +78,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
+  color: var(--accent-color);
 }
 .container img {
   width: 100%;
@@ -747,7 +748,7 @@ section,
   padding-bottom: 0px;
   position: relative;
 }
-
+/* 
 .section-title h2:after {
   content: "";
   position: absolute;
@@ -760,7 +761,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -827,6 +828,9 @@ section,
   margin-left: 25px;
   color: var(--default-color);
   font-weight: 600;
+}
+.hero-section {
+  display: flex;
 }
 
 .hero .btn-watch-video i {
@@ -2302,7 +2306,6 @@ section,
 .headingMain {
   font-size: 1cm;
   font-weight: bold;
-  color: black;
 }
 
 .meetOurLeaders {
@@ -2341,12 +2344,14 @@ section,
   text-align: center;
   cursor: pointer;
 }
-#imageBelieve {
-  height: 9cm;
-  width: 8cm;
+.imageBelieve {
+  width: 50%;
   object-fit: cover;
   border: 1px solid black;
   border-radius: 3px;
+}
+.imageBelieve img {
+  width: 100%;
 }
 .whatWebelieve {
   width: 100%;
@@ -2366,9 +2371,7 @@ section,
 }
 
 .text h1 {
-  font: bold;
   font-size: 1cm;
-  color: black;
   margin-top: 0.5cm;
 }
 .text a {
@@ -2471,11 +2474,9 @@ section,
   padding: 30px;
 }
 .name h5 {
-  color: black;
   font-size: 0.6cm;
 }
 .name p a {
-  color: black;
   text-decoration: underline;
   font-size: 0.4cm;
 }

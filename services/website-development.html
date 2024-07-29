@@ -1,434 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EC</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EC</title>
-  <meta content="" name="description" />
-  <meta content="" name="keywords" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Main CSS File -->
+    <link href="../assets/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Main CSS File -->
-  <link href="../assets/css/main.css" rel="stylesheet" />
-</head>
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">
+            <img src="../assets/img/logo/logoblack.png" alt="logo" />
+          </h1>
+        </a>
 
-<body class="index-page">
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">
-          <img src="../assets/img/logo/logoblack.png" alt="logo" />
-        </h1>
-      </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Services</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="services/website-development.html"
+                    >Website Development</a
+                  >
+                </li>
+                <li>
+                  <a href="services/app-development">App Development</a>
+                </li>
+                <li><a href="services/ecommerce.html">E-commerce</a></li>
+                <li><a href="services/ai-services.html">AI Development</a></li>
+                <li>
+                  <a href="services/maintanance.html">Maintanance & Support</a>
+                </li>
+                <li><a href="services/saas.html">Saas</a></li>
+                <li><a href="services/ui-ux.html">UI/UX Design</a></li>
+                <li>
+                  <a href="services/softwareDevelopment.html"
+                    >Software Development</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="case-study-design.html">Case-Studies</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>insights</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="faq.html">FAQ's</a></li>
+              </ul>
+            </li>
+            <li><a href="contactpage.html">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#"><span>Services</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="services/website-development.html">Website Development</a></li>
-              <li><a href="services/app-development.html">App Development</a></li>
-              <li><a href="services/ecommerce.html">E-commerce</a></li>
-              <li><a href="services/ai-services.html">AI Development</a></li>
-              <li><a href="services/maintanance.html">Maintanance & Support</a></li>
-              <li><a href="services/saas.html">Saas</a></li>
-              <li><a href="services/ui-ux.html">UI/UX Design</a></li>
-              <li><a href="services/softwareDevelopment.html">Software Development</a></li>
-            </ul>
+        <a class="btn-getstarted" href="contactpage.html">Get Started</a>
+      </div>
+    </header>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="section hero">
+        <div>
+          <div class="row gy-4">
+            <div
+              class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center"
+            >
+              <h1>one-stop IT shop</h1>
+              <p>
+                from code and clicks to total security, cutting-edge web design
+                and development to data-driven marketing strategies, we fuel
+                your digital growth. Schedule a free consultation now to unlock
+                your business potential! IT Services Evolved. Get a Free
+                Consultation Today!
+              </p>
+              <div class="d-flex">
+                <a href="index.html#about" class="btn-get-started"
+                  >Get a Quote</a
+                >
+                <a
+                  href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+                  class="glightbox btn-watch-video d-flex align-items-center"
+                  ><i class="bi bi-play-circle"></i><span>Watch Video</span></a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+              <img
+                src="../assets/img/banner/hero1.webp"
+                class="img-fluid animated"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <section id="extra-services">
+        <div class="section-title" data-aos="fade-up">
+          <h2>What We Offer Beyond Other Agencies</h2>
+          <p>
+            At Webiste IT Solutions, we go the extra mile to ensure our clients
+            receive the best service possible. Here’s what sets us apart:
+          </p>
+        </div>
+        <!-- banner section  -->
+        <div class="company-values">
+          <img src="../assets/img/banner/values.png" alt="values" />
+        </div>
+      </section>
+      <!-- how Section -->
+      <section id="services" class="services section">
+        <!-- how Title -->
+        <div class="section-title" data-aos="fade-up">
+          <h2>How a Website Can Increase Your Business</h2>
+          <p>A website can significantly boost your business by</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div>
+          <div class="row gy-4">
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service1.png" alt="website" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Reaching a Wider Audience</a
+                  >
+                </h4>
+                <p>
+                  Extend your market reach beyond your local customer base with
+                  a website. Reach out to potential customers across the world
+                  and give your business global opportunities.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service2.png" alt="app" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Improving Customer Service</a
+                  >
+                </h4>
+                <p>
+                  Provide easy access to information and support. A
+                  well-designed website will provide customers with easy access
+                  to FAQs, support resources, and contact information, among
+                  other services.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Product/Service Display</a
+                  >
+                </h4>
+                <p>
+                  Show and describe your products/services informatively and
+                  beautifully. Represent your products/services in an attractive
+                  and detailed manner that helps the customer make an informed
+                  decision.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >E-commerce Support</a
+                  >
+                </h4>
+                <p>
+                  Facilitate sales and transactions online. Provide a
+                  straightforward method for sales and transactions online so
+                  that customers can make purchases from your website at any
+                  time.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Build Credibility</a
+                  >
+                </h4>
+                <p>
+                  Show you're trustworthy and professional. A professional
+                  website with customer testimonials and case studies can do
+                  wonders for the credibility and reputation of your business.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Marketing and Promotion</a
+                  >
+                </h4>
+                <p>
+                  Use web marketing techniques. Incorporate SEO, content
+                  marketing, and social media to bring traffic to your site and
+                  market your business effectively.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Customer Data Collection</a
+                  >
+                </h4>
+                <p>
+                  Get insights that matter to improve marketing. Use forms and
+                  analytics tools to collect the needed data from visitors and
+                  understand client behavior to fine-tune your marketing
+                  efforts.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-4 d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <img src="assets/img/icons/service6.png" alt="ecommerce" />
+                </div>
+                <h4>
+                  <a href="service-details.html" class="stretched-link"
+                    >Customer Engagement</a
+                  >
+                </h4>
+                <p>
+                  Build strong customer relationships with blogs, newsletters,
+                  and interactive features. Keep your audience engaged through
+                  blogs, newsletters, and interactive features to build a base
+                  of loyal customers.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /how Section -->
+
+      <!-- banner  -->
+      <div class="container-fluid section-title" data-aos="fade-up">
+        <img
+          src="../assets/img/banner/websitequote.png"
+          class="img-fluid animated"
+          alt=""
+        />
+      </div>
+      <!-- banner end  -->
+      <!-- technology row  -->
+      <section class="technologies">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Features</h2>
+          <p>Why Businesses Choose Us for Their Web Development Needs</p>
+        </div>
+        <div class="video_scroll">
+          <!-- first line  -->
+          <div class="video_scroll_effect_1">
+            <div class="wrapper_1">
+              <div class="row gy-4">
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-projector" style="color: #ffbb2c"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Streamlined Project Management</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-tags" style="color: #5578ff"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Crystal-Clear Pricing</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-alarm" style="color: #e80368"></i>
+                    <h3>
+                      <a href="" class="stretched-link">On-Time Delivery</a>
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-telephone" style="color: #e361ff"></i>
+                    <h3>
+                      <a href="" class="stretched-link">Ongoing Support</a>
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+              </div>
+            </div>
+          </div>
+          <!-- second line / -->
+          <div class="video_scroll_effect">
+            <div class="wrapper">
+              <div class="row gy-4">
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-eye" style="color: #47aeff"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Tailored Solutions for Your Unique Vision</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="600"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-star" style="color: #ffa76e"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Expertise You Can Trust</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-x-diamond" style="color: #11dbcf"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Top-Tier Security and Data Protection</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+
+                <div
+                  class="col-lg-3 col-md-4"
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                >
+                  <div class="features-item">
+                    <i class="bi bi-camera-video" style="color: #4233ff"></i>
+                    <h3>
+                      <a href="" class="stretched-link"
+                        >Innovation Beyond Aesthetics</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+                <!-- End Feature Item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- technology row end  -->
+      <!-- timeline start -->
+
+      <section class="timeline">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Collaborative Approach</h2>
+        </div>
+        <ol>
+          <li>
+            <div>
+              <time>Collaborative Kick-off</time> We build strong client
+              partnerships, starting with meetings to discuss your vision and
+              goals. We'll also establish a mutually agreeable NDA for
+              confidentiality.
+            </div>
           </li>
-          <li><a href="About-us.html">About us</a></li>
-          <li><a href="case-study-design.html">Case-Studies</a></li>
-          <li class="dropdown">
-            <a href="#"><span>insights</span>
-              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="blog.html">Blogs</a></li>
-              <li><a href="faq.html">FAQ's</a></li>
-            </ul>
+          <li>
+            <div>
+              <time> Deep Dive: Understanding Your Needs</time> Before
+              development, we thoroughly understand your business objectives
+              through analysis of your current systems, processes, and market
+              trends. This sets a solid foundation for your project's success.
+            </div>
           </li>
-          <li><a href="contactpage.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="contactpage.html">Get Started</a>
-    </div>
-  </header>
-  <main class="main">
-    <!-- Hero Section -->
-    <section id="hero" class="section hero">
-      <div>
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h1> one-stop IT shop</h1>
-            <p>
-              from code and clicks to total security, cutting-edge web design and development to data-driven marketing
-              strategies, we fuel your digital growth. Schedule a free consultation now to unlock your business
-              potential! IT Services Evolved. Get a Free Consultation Today!
-            </p>
-            <div class="d-flex">
-              <a href="index.html#about" class="btn-get-started">Get a Quote</a>
-              <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch
-                  Video</span></a>
+          <li>
+            <div>
+              <time>Strategic Roadmap: Charting Your Course</time>Based on
+              discussions and research, we propose a tailored strategic solution
+              covering design, content, programming, and testing. We break down
+              the plan into actionable steps for each team, ensuring efficient
+              development.
             </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="../assets/img/banner/hero1.webp" class="img-fluid animated" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Hero Section -->
-
-    <section id="extra-services">
-      <div class="section-title" data-aos="fade-up">
-        <h2>What We Offer Beyond Other Agencies</h2>
-        <p>At Webiste IT Solutions, we go the extra mile to ensure our clients
-          receive the best service possible. Here’s what sets us apart:</p>
-      </div>
-      <!-- banner section  -->
-      <div class="company-values">
-        <img src="../assets/img/banner/values.png" alt="values">
-      </div>
-    </section>
-    <!-- how Section -->
-    <section id="services" class="services section">
-      <!-- how Title -->
-      <div class=" section-title" data-aos="fade-up">
-        <h2>How a Website Can Increase Your Business</h2>
-        <p>A website can significantly boost your business by</p>
-      </div>
-      <!-- End Section Title -->
-
-      <div>
-        <div class="row gy-4">
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service1.png" alt="website" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Reaching a Wider Audience</a>
-              </h4>
-              <p>
-                Extend your market reach beyond your local customer base with a website. Reach out to potential
-                customers across the world and give your business global opportunities.
-              </p>
+          </li>
+          <li>
+            <div>
+              <time> Building Your Vision: Development in Action</time> With a
+              clear plan, our experienced team begins work. We prioritize close
+              communication, providing regular client reports on progress,
+              milestones, and adjustments.
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service2.png" alt="app" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Improving Customer Service</a>
-              </h4>
-              <p>
-                Provide easy access to information and support. A well-designed website will provide customers with easy
-                access to FAQs, support resources, and contact information, among other services.
-              </p>
+          </li>
+          <li>
+            <div>
+              <time>Quality Assurance: Ensuring Perfection</time> Before launch,
+              your project undergoes rigorous QA testing in a dedicated staging
+              environment. Our team tests all functionalities and interfaces to
+              ensure a polished, user-friendly final product.
             </div>
-          </div>
-          <!-- End Service Item -->
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Product/Service Display</a>
-              </h4>
-              <p>
-                Show and describe your products/services informatively and beautifully. Represent your products/services
-                in an attractive and detailed manner that helps the customer make an informed decision.
-              </p>
+          </li>
+          <li>
+            <div>
+              <time>Launch & Beyond: Continued Success</time>After launch, we
+              ensure a smooth start. Your impressive website receives ongoing
+              maintenance and updates to optimize performance and meet evolving
+              needs.
             </div>
-          </div>
-          <!-- End Service Item -->
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">E-commerce Support</a>
-              </h4>
-              <p>
-                Facilitate sales and transactions online. Provide a straightforward method for sales and transactions
-                online so that customers can make purchases from your website at any time.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
+          </li>
+          <li></li>
+        </ol>
+      </section>
 
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Build Credibility</a>
-              </h4>
-              <p>
-                Show you're trustworthy and professional. A professional website with customer testimonials and case
-                studies can do wonders for the credibility and reputation of your business.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Marketing and Promotion</a>
-              </h4>
-              <p>
-                Use web marketing techniques. Incorporate SEO, content marketing, and social media to bring traffic to
-                your site and market your business effectively.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Customer Data Collection</a>
-              </h4>
-              <p>
-                Get insights that matter to improve marketing. Use forms and analytics tools to collect the needed data
-                from visitors and understand client behavior to fine-tune your marketing efforts.
-              </p>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <img src="assets/img/icons/service6.png" alt="ecommerce" />
-              </div>
-              <h4>
-                <a href="service-details.html" class="stretched-link">Customer Engagement</a>
-              </h4>
-              <p>
-                Build strong customer relationships with blogs, newsletters, and interactive features. Keep your
-                audience engaged through blogs, newsletters, and interactive features to build a base of loyal
-                customers.
-              </p>
-            </div>
-          </div>
-          <!-- End Service Item -->
-        </div>
-      </div>
-    </section>
-    <!-- /how Section -->
+      <!-- timeline end  -->
+    </main>
 
-    <!-- banner  -->
-    <div class="container-fluid section-title" data-aos="fade-up">
-      <img src="../assets/img/banner/websitequote.png" class="img-fluid animated" alt="" />
-    </div>
-    <!-- banner end  -->
-    <!-- technology row  -->
-    <section class="technologies">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Features</h2>
-        <p>Why Businesses Choose Us for Their Web Development Needs</p>
-      </div>
-      <div class="video_scroll">
-        <!-- first line  -->
-        <div class="video_scroll_effect_1">
-          <div class="wrapper_1">
-            <div class="row gy-4">
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="features-item">
-                  <i class="bi bi-projector" style="color: #ffbb2c"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Streamlined Project Management</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="features-item">
-                  <i class="bi bi-tags" style="color: #5578ff"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Crystal-Clear Pricing</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="features-item">
-                  <i class="bi bi-alarm" style="color: #e80368"></i>
-                  <h3><a href="" class="stretched-link">On-Time Delivery</a></h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-                <div class="features-item">
-                  <i class="bi bi-telephone" style="color: #e361ff"></i>
-                  <h3><a href="" class="stretched-link">Ongoing Support</a></h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-            </div>
-          </div>
-        </div>
-        <!-- second line / -->
-        <div class="video_scroll_effect">
-          <div class="wrapper">
-            <div class="row gy-4">
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
-                <div class="features-item">
-                  <i class="bi bi-eye" style="color: #47aeff"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Tailored Solutions for Your Unique Vision</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
-                <div class="features-item">
-                  <i class="bi bi-star" style="color: #ffa76e"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Expertise You Can Trust</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
-                <div class="features-item">
-                  <i class="bi bi-x-diamond" style="color: #11dbcf"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Top-Tier Security and Data Protection</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-
-              <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
-                <div class="features-item">
-                  <i class="bi bi-camera-video" style="color: #4233ff"></i>
-                  <h3>
-                    <a href="" class="stretched-link">Innovation Beyond Aesthetics</a>
-                  </h3>
-                </div>
-              </div>
-              <!-- End Feature Item -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- technology row end  -->
-    <!-- timeline start -->
-
-    <section class="timeline">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Our Collaborative Approach</h2>
-      </div>
-      <ol>
-        <li>
-          <div>
-            <time>Collaborative Kick-off</time> We build strong client
-            partnerships, starting with meetings to discuss your vision and
-            goals. We'll also establish a mutually agreeable NDA for
-            confidentiality.
-          </div>
-        </li>
-        <li>
-          <div>
-            <time> Deep Dive: Understanding Your Needs</time> Before
-            development, we thoroughly understand your business objectives
-            through analysis of your current systems, processes, and market
-            trends. This sets a solid foundation for your project's success.
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>Strategic Roadmap: Charting Your Course</time>Based on
-            discussions and research, we propose a tailored strategic solution
-            covering design, content, programming, and testing. We break down
-            the plan into actionable steps for each team, ensuring efficient
-            development.
-          </div>
-        </li>
-        <li>
-          <div>
-            <time> Building Your Vision: Development in Action</time> With a
-            clear plan, our experienced team begins work. We prioritize close
-            communication, providing regular client reports on progress,
-            milestones, and adjustments.
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>Quality Assurance: Ensuring Perfection</time> Before launch,
-            your project undergoes rigorous QA testing in a dedicated staging
-            environment. Our team tests all functionalities and interfaces to
-            ensure a polished, user-friendly final product.
-          </div>
-        </li>
-        <li>
-          <div>
-            <time>Launch & Beyond: Continued Success</time>After launch, we
-            ensure a smooth start. Your impressive website receives ongoing
-            maintenance and updates to optimize performance and meet evolving
-            needs.
-          </div>
-        </li>
-        <li></li>
-      </ol>
-    </section>
-
-    <!-- timeline end  -->
-  </main>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../assets/vendor/php-email-form/validate.js"></script>
-  <script src="../assets/vendor/aos/aos.js"></script>
-  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="../assets/js/main.js"></script>
-</body>
-
+    <!-- Main JS File -->
+    <script src="../assets/js/main.js"></script>
+  </body>
 </html>
