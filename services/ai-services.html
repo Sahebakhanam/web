@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webiste IT Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+        font-family: "Roboto", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        margin: 0;
+      }
+      .flex {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+      }
+      .website-slider-wrapper div {
+        position: relative;
+      }
+      .website-slider-wrapper {
+        margin-top: 5vw;
+        margin-left: 11vw;
+      }
+      .website-slide-image {
+        height: 24vw;
+      }
+      .website-slide-image img {
+        width: 24vw;
+        cursor: pointer;
+      }
+      .website-slide-content {
+        width: 25vw;
+        color: #fff;
+        padding: 3vw 18vw 3vw 9vw;
+      }
+      .website-slide-date {
+        color: #0a8acb;
+        font-size: 1.1vw;
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        padding-bottom: 1.4vw;
+      }
+      .website-slide-title {
+        font-size: 1.2vw;
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        line-height: 1.55vw;
+        padding-bottom: 1.8vw;
+      }
+      .website-slide-text {
+        font-size: 0.8vw;
+        line-height: 1.2vw;
+        opacity: 0.8;
+        padding-bottom: 4vw;
+      }
+      .website-slide-more {
+        font-weight: 400;
+        letter-spacing: 0.1vw;
+        float: left;
+        font-size: 0.9vw;
+      }
+      .website-slide-bullet {
+        width: 0.5vw;
+        height: 0.5vw;
+        background-color: #0b8bcc;
+        border-radius: 200%;
+        position: relative;
+        margin-left: 1.2vw;
+      }
+      .website-slide-nav {
+        margin-left: 64vw;
+        margin-top: -5.5vw;
+      }
+      div.overlay-blue {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: 0.5s ease all;
+      }
+      div.overlay-blue:hover {
+        background-color: rgba(13, 27, 43, 0.5);
+      }
+      .website-arrows {
+        width: 3.5vw;
+        margin-top: -5.8vw;
+        margin-left: 72vw;
+        position: relative;
+      }
+      .website-arrow {
+        display: inline-block;
+        position: absolute;
+        width: 1.2vw;
+        height: 1.2vw;
+        background: transparent;
+        text-indent: -9999px;
+        border-top: 0.15vw solid #fff;
+        border-left: 0.15vw solid #fff;
+        transition: all 0.1s ease-in-out;
+        text-decoration: none;
+        color: transparent;
+      }
+      .website-arrow:hover {
+        border-color: #0a8acb;
+        border-width: 0.25vw;
+      }
+      .website-arrow:before {
+        display: block;
+        height: 200%;
+        width: 200%;
+        margin-left: -50%;
+        margin-top: -50%;
+        content: "";
+        transform: rotate(45deg);
+      }
+      .website-arrow.prev {
+        transform: rotate(-45deg);
+        left: 0;
+      }
+      .website-arrow.next {
+        transform: rotate(135deg);
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Webiste IT Solutions</h1>
+      <p>Your partner in digital success</p>
+    </header>
+    <nav>
+      <a href="#market-need">Market Need</a>
+      <a href="#extra-services">Extra Services</a>
+      <a href="#increase-business">Increase Business</a>
+      <a href="#technologies">Technologies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+      <div class="website-slider">
+        <div class="website-slider-wrapper flex">
+          <div class="website-slide flex">
+            <div class="website-slide-image slider-link prev">
+              <img src="https://goranvrban.com/codepen/img2.jpg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="website-slide-content">
+              <div class="website-slide-date">Visibility</div>
+              <div class="website-slide-title">
+                A website makes your business
+              </div>
+              <div class="website-slide-text">
+                discoverable to potential customers around the globe.
+              </div>
+              <div class="website-slide-more">READ MORE</div>
+            </div>
+          </div>
+          <div class="website-slide flex">
+            <div class="website-slide-image slider-link next">
+              <img src="https://goranvrban.com/codepen/img3.jpg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="website-slide-content">
+              <div class="website-slide-date">Credibility</div>
+              <div class="website-slide-title">
+                LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+              </div>
+              <div class="website-slide-text">
+                A professional website builds trust and authority in your
+                industry.
+              </div>
+              <div class="website-slide-more">READ MORE</div>
+            </div>
+          </div>
+          <div class="website-slide flex">
+            <div class="website-slide-image slider-link next">
+              <img src="https://goranvrban.com/codepen/img5.jpg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="website-slide-content">
+              <div class="website-slide-date">Customer Engagement</div>
+              <div class="website-slide-title">
+                LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+              </div>
+              <div class="website-slide-text">
+                Websites provide a platform for customers to interact with your
+                brand, learn about your products or services, and make
+                purchases.
+              </div>
+              <div class="website-slide-more">READ MORE</div>
+            </div>
+          </div>
+          <div class="website-slide flex">
+            <div class="website-slide-image slider-link next">
+              <img src="https://goranvrban.com/codepen/img6.jpg" />
+              <div class="overlay"></div>
+            </div>
+            <div class="website-slide-content">
+              <div class="website-slide-date">Marketing and Sales</div>
+              <div class="website-slide-title">
+                LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT
+              </div>
+              <div class="website-slide-text">
+                Online presence allows for effective digital marketing
+                strategies, increasing sales opportunities.
+              </div>
+              <div class="website-slide-more">READ MORE</div>
+            </div>
+          </div>
+        </div>
+        <div class="website-arrows">
+          <a
+            href="#"
+            title="Previous"
+            class="website-arrow slider-link prev"
+          ></a>
+          <a href="#" title="Next" class="website-arrow slider-link next"></a>
+        </div>
+      </div>
+      <section id="market-need">
+        <h2 class="section-title">
+          Why Websites are Essential in Today's Market
+        </h2>
+        <p>
+          In today's digital age, having a robust online presence is crucial for
+          any business. A well-designed website can act as a powerful marketing
+          tool, enhance brand credibility, and provide a platform for engaging
+          with customers. Here are some reasons why websites are essential:
+        </p>
+        <ul>
+          <li>
+            <strong>Visibility:</strong> A website makes your business
+            discoverable to potential customers around the globe.
+          </li>
+          <li>
+            <strong>Credibility:</strong> A professional website builds trust
+            and authority in your industry.
+          </li>
+          <li>
+            <strong>Customer Engagement:</strong> Websites provide a platform
+            for customers to interact with your brand, learn about your products
+            or services, and make purchases.
+          </li>
+          <li>
+            <strong>Marketing and Sales:</strong> Online presence allows for
+            effective digital marketing strategies, increasing sales
+            opportunities.
+          </li>
+        </ul>
+      </section>
+
+      <section id="extra-services">
+        <h2 class="section-title">What We Offer Beyond Other Agencies</h2>
+        <p>
+          At Webiste IT Solutions, we go the extra mile to ensure our clients
+          receive the best service possible. Here’s what sets us apart:
+        </p>
+        <ul>
+          <li>
+            <strong>Customized Solutions:</strong> We tailor our services to
+            meet your unique business needs and goals.
+          </li>
+          <li>
+            <strong>Cutting-Edge Technologies:</strong> We leverage the latest
+            technologies to ensure your website is fast, secure, and scalable.
+          </li>
+          <li>
+            <strong>SEO Optimization:</strong> Our websites are built with SEO
+            best practices to improve your search engine rankings.
+          </li>
+          <li>
+            <strong>24/7 Support:</strong> We offer round-the-clock support to
+            address any issues and ensure your website runs smoothly.
+          </li>
+          <li>
+            <strong>Analytics and Insights:</strong> We provide detailed
+            analytics to help you understand your audience and improve your
+            website’s performance.
+          </li>
+        </ul>
+      </section>
+
+      <section id="increase-business">
+        <h2 class="section-title">How a Website Can Increase Your Business</h2>
+        <p>A website can significantly boost your business by:</p>
+        <ul>
+          <li>
+            <strong>Reaching a Wider Audience:</strong> Expand your market reach
+            beyond local boundaries.
+          </li>
+          <li>
+            <strong>Improving Customer Service:</strong> Provide customers with
+            easy access to information and support.
+          </li>
+          <li>
+            <strong>Showcasing Products/Services:</strong> Highlight your
+            offerings in a visually appealing and informative manner.
+          </li>
+          <li>
+            <strong>Enabling E-commerce:</strong> Facilitate online sales and
+            transactions, making it convenient for customers to purchase your
+            products.
+          </li>
+          <li>
+            <strong>Collecting Customer Data:</strong> Use forms and analytics
+            to gather valuable insights and improve your marketing strategies.
+          </li>
+        </ul>
+      </section>
+
+      <section id="technologies">
+        <h2 class="section-title">Technologies We Use</h2>
+        <p>
+          We employ a variety of modern technologies to build high-quality
+          websites:
+        </p>
+        <ul>
+          <li>
+            <strong>HTML5 & CSS3:</strong> For creating responsive and visually
+            appealing layouts.
+          </li>
+          <li>
+            <strong>JavaScript & Frameworks (React, Angular, Vue):</strong> To
+            build dynamic and interactive user interfaces.
+          </li>
+          <li>
+            <strong>Backend Technologies (Node.js, Python, PHP):</strong> For
+            robust server-side development and database management.
+          </li>
+          <li>
+            <strong>Content Management Systems (WordPress, Drupal):</strong> For
+            easy website management and content updates.
+          </li>
+          <li>
+            <strong>Cloud Services (AWS, Google Cloud, Azure):</strong> To
+            ensure scalability, reliability, and security of your website.
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <p>
+          Ready to take your online presence to the next level? Contact us
+          today!
+        </p>
+        <p>Email: info@webisteitsolutions.com</p>
+        <p>Phone: +1 234 567 890</p>
+        <p>Address: 1234 IT Solutions Ave, Tech City, TX 12345</p>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 Webiste IT Solutions. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      (function ($) {
+        $(document).ready(function () {
+          var s = $(".website-slider"),
+            sWrapper = s.find(".website-slider-wrapper"),
+            sItem = s.find(".website-slide"),
+            sWidth = sItem.width(),
+            sCount = sItem.length,
+            sTotalWidth = sCount * sWidth;
+
+          sWrapper.css("width", sTotalWidth);
+
+          var clickCount = 0;
+
+          function slideNext() {
+            clickCount = clickCount < sCount - 1 ? clickCount + 1 : 0;
+            gsap.to(sWrapper, { duration: 0.4, x: "-" + sWidth * clickCount });
+          }
+
+          function slidePrev() {
+            clickCount = clickCount > 0 ? clickCount - 1 : sCount - 1;
+            gsap.to(sWrapper, { duration: 0.4, x: "-" + sWidth * clickCount });
+          }
+
+          $(".website-arrow.next").on("click", function (e) {
+            e.preventDefault();
+            slideNext();
+          });
+
+          $(".website-arrow.prev").on("click", function (e) {
+            e.preventDefault();
+            slidePrev();
+          });
+
+          setInterval(slideNext, 5000); // Automatically slide every 5 seconds
+        });
+      })(jQuery);
+    </script>
+  </body>
+</html>

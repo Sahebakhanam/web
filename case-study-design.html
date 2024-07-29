@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EC</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Scroll Top -->
+    <!-- website case-studies  -->
+    <div class="blog-slider-container">
+      <div class="content">
+        <div class="content_top">
+          <h2 class="section-title">Web Design</h2>
+        </div>
+        <div class="content_middle blog-slider">
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev">Prev</button>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </div>
+    <!-- ecommerce case studies  -->
+    <div class="blog-slider-container">
+      <div class="content">
+        <div class="content_top">
+          <h2 class="section-title">Web Design</h2>
+        </div>
+        <div class="content_middle blog-slider">
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+          <div class="content_item">
+            <img
+              src="https://www.johnperkins.co.uk/wp-content/uploads/2021/09/bri_web10-278x168.jpg"
+              alt="images"
+            />
+            <p class="one">Name</p>
+            <a href="#" class="two">About the app</a>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev">Prev</button>
+          <button class="next">Next</button>
+        </div>
+      </div>
+    </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script>
+      const slider = document.querySelector(".blog-slider");
+      const items = document.querySelectorAll(".content_item");
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      let currentIndex = 0;
+
+      function updateSliderPosition() {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      nextButton.addEventListener("click", () => {
+        if (currentIndex < items.length - 1) {
+          currentIndex++;
+          updateSliderPosition();
+        }
+      });
+
+      prevButton.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateSliderPosition();
+        }
+      });
+    </script>
+
+    <!-- Main JS File -->
+  </body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ec</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- bootstrap  -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="#">Element Coders</a></h1>
+      <ul class="main-nav">
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">FAQ's</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <h2>Add Blog</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form method="post" role="form">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="title"
+                placeholder="Title"
+              />
+              <select id="faqtype" name="faqtype">
+                <option value="volvo">About Company</option>
+                <option value="volvo">Website Development</option>
+                <option value="saab">App Development</option>
+                <option value="fiat">Ecommerce</option>
+                <option value="audi">CMS Development</option>
+                <option value="volvo">Maintanance & Support</option>
+                <option value="saab">Saas</option>
+                <option value="fiat">UI/Ux Design</option>
+                <option value="audi">SEO</option>
+                <option value="audi">Tech News</option>
+              </select>
+              <input
+                type="text"
+                class="form-control"
+                name="Writen by"
+                placeholder="Writen by"
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="title"
+                placeholder="Title"
+              />
+            </div>
+            <div class="form-group">
+              <label> Image </label>
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    Browse <input type="file" name="bimgs" multiple />
+                  </span>
+                </span>
+                <input type="text" class="form-control" readonly />
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="title"
+                placeholder="Title"
+              />
+            </div>
+
+            <div class="form-group">
+              <label> Image </label>
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    Browse <input type="file" name="bimgs" multiple />
+                  </span>
+                </span>
+                <input type="text" class="form-control" readonly />
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                name="title"
+                placeholder="Title"
+              />
+            </div>
+            <div class="form-group">
+              <label> Image </label>
+              <div class="input-group">
+                <span class="input-group-btn">
+                  <span class="btn btn-primary btn-file">
+                    Browse <input type="file" name="bimgs" multiple />
+                  </span>
+                </span>
+                <input type="text" class="form-control" readonly />
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control bcontent" name="content"></textarea>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                name="Submit"
+                value="Publish"
+                class="btn btn-primary form-control"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <div>
+        <table class="blog">
+          <tr>
+            <td><p>Title</p></td>
+            <td><p>Sub-heading1</p></td>
+            <td><p>Mainimg1</p></td>
+            <td><p>Heading2</p></td>
+            <td><p>image1</p></td>
+            <td><p>Heading3</p></td>
+            <td><p>image3</p></td>
+          </tr>
+          <tr>
+            <td><p>1</p></td>
+            <td><p>2</p></td>
+            <td><p>3</p></td>
+            <td><p>4</p></td>
+            <td><p>5</p></td>
+            <td><p>6</p></td>
+            <td><p>7</p></td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script>
+      $(function () {
+        $(".bcontent").wysihtml5({
+          toolbar: {
+            image: false,
+          },
+        });
+
+        $(document).on("change", ".btn-file :file", function () {
+          var input = $(this);
+          var numFiles = input.get(0).files ? input.get(0).files.length : 1;
+          console.log(input.get(0).files);
+          var label = input.val().replace(/\\/g, "/").replace(/.*\//, "");
+          input.trigger("fileselect", [numFiles, label]);
+        });
+
+        $(".btn-file :file").on(
+          "fileselect",
+          function (event, numFiles, label) {
+            var input = $(this).parents(".input-group").find(":text");
+            var log = numFiles > 1 ? numFiles + " files selected" : label;
+
+            if (input.length) {
+              input.val(log);
+            } else {
+              if (log) {
+                alert(log);
+              }
+            }
+          }
+        );
+      });
+    </script>
+  </body>
+</html>
