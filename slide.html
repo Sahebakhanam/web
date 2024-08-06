@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .portfolio .portfolio-filters {
+        padding: 0;
+        margin: 0 auto 20px auto;
+        list-style: none;
+        text-align: center;
+      }
+
+      .portfolio .portfolio-filters li {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 10px;
+        line-height: 1;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .portfolio .portfolio-filters li:hover,
+      .portfolio .portfolio-filters li.filter-active {
+        color: var(--accent-color);
+      }
+
+      .portfolio .portfolio-filters li:first-child {
+        margin-left: 0;
+      }
+
+      .portfolio .portfolio-filters li:last-child {
+        margin-right: 0;
+      }
+
+      @media (max-width: 575px) {
+        .portfolio .portfolio-filters li {
+          font-size: 14px;
+          margin: 0 5px;
+        }
+      }
+
+      .portfolio .portfolio-content {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .portfolio .portfolio-content img {
+        transition: 0.3s;
+      }
+
+      .portfolio .portfolio-content .portfolio-info {
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        transition: all ease-in-out 0.3s;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+      }
+
+      .portfolio .portfolio-content .portfolio-info h4 {
+        font-size: 14px;
+        padding: 5px 10px;
+        font-weight: 400;
+        color: #ffffff;
+        display: inline-block;
+        background-color: var(--accent-color);
+      }
+
+      .portfolio .portfolio-content .portfolio-info p {
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        display: inline-block;
+        left: 0;
+        right: 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .portfolio .portfolio-content .portfolio-info .preview-link,
+      .portfolio .portfolio-content .portfolio-info .details-link {
+        position: absolute;
+        left: calc(50% - 40px);
+        font-size: 26px;
+        top: calc(50% - 14px);
+        color: #fff;
+        transition: 0.3s;
+        line-height: 1.2;
+      }
+
+      .portfolio .portfolio-content .portfolio-info .preview-link:hover,
+      .portfolio .portfolio-content .portfolio-info .details-link:hover {
+        color: var(--accent-color);
+      }
+
+      .portfolio .portfolio-content .portfolio-info .details-link {
+        left: 50%;
+        font-size: 34px;
+        line-height: 0;
+      }
+
+      .portfolio .portfolio-content:hover .portfolio-info {
+        opacity: 1;
+      }
+
+      .portfolio .portfolio-content:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="portfolio" class="portfolio section">
+      <!-- Section Title -->
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>
+          We are Creating a Bridge That will Connect the Traditional and Digital
+          World
+        </p>
+      </div>
+      <!-- End Section Title -->
+
+      <div>
+        <div
+          class="isotope-layout"
+          data-default-filter="*"
+          data-layout="masonry"
+          data-sort="original-order"
+        >
+          <ul class="portfolio-filters isotope-filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-webdev">Web Development</li>
+            <li data-filter=".filter-appdev">App Development</li>
+            <li data-filter=".filter-ecommerce">Ecommerce</li>
+            <li data-filter=".filter-uiux">UI/UX Design</li>
+            <li data-filter=".filter-logo">Logo Design</li>
+          </ul>
+          <!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/case-studies/wdg1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Wedme Good</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/case-studies/wdg2.webp"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/yogamrit.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>YogAmrit</h4>
+                  <p>
+                    Yogamrit empowers you to find peace within, offering
+                    accessible online yoga classes tailored to your schedule.
+                    Dive into a journey of wellness with Yogamrit, where ancient
+                    wisdom meets modern convenience for a balanced life.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/yogamrit.png"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="https://arunasyogamrit.com/"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/culenz1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Culenz</h4>
+                  <p>
+                    Culenz Transform virtual world with , where immersive
+                    scenery meets cutting-edge VR technology. Elevate your
+                    experiences with our bespoke scenic solutions, paving the
+                    way for captivating virtual environments.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/culenz1.png"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="https://culenz.com/"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-webdev"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/culenz1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>BreakAway</h4>
+                  <p>
+                    Breakaway offer multi-lingual 24/7 support, market analysis
+                    and access to free toold like a demo account, education and
+                    extensive research resources.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/culenz1.png"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="https://breakaway-fx.com/"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-appdev"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/famease1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>FameEase</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/famease2.webp"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ecommerce"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/geko1.webp"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Geko</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/geko2.webp"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-uiux"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/omanager1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>One Manager</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/omanager2.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-branding"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/logo/breakaway.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Breakawayc</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/logo/breakaway.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/logo/gym.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Breakawayc</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/logo/gym.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/logo/revievqii.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Breakawayc</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/logo/revievqii.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/logo/sajpe.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Breakawayc</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/logo/sajpe.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-logo"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="assets/img/portfolio/logo/smsn.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Breakawayc</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio/logo/smsn.png"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-book"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+          </div>
+          <!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="assets/js/main copy.js"></script>
+</html>
