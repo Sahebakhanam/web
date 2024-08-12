@@ -14,7 +14,7 @@
                             Today To Schedule A Free Consultation!
                         </p>
                         <div class="hero-buttons">
-                            <a href="index.html#about" class="btn-get-started">Get a Quote</a>
+                            <button><a href="index.html#about" class="btn-get-started">Get a Quote</a></button>
                         </div>
                     </div>
                     <div class="hero-img">
@@ -183,8 +183,8 @@
                 <p>
                     We specialize in creating custom software solutions tailored to your needs, from UI design to SaaS and
                     web development. Our team leverages the latest technologies to build robust, scalable, and user-friendly
-                    applications that drive business success. Whether you're looking to develop a new platform or enhance an
-                    existing one, we deliver solutions that are innovative, efficient, and aligned with your goals.
+                    applications that drive business success.We deliver solutions that are innovative, efficient, and
+                    aligned with your goals.
                 </p>
             </div>
             <!-- End Service Item -->
@@ -271,4 +271,35 @@
     {{-- testimonial start  --}}
     @include('testimonial')
     @include('faq-s')
+    {{-- blog --}}
+    <section>
+        <div class="section-title">
+            <h2>Our Recent Blogs</h2>
+            <p></p>
+        </div>
+        <div class="blog-container">
+            <div class="blog-card">
+                <div class="blog-card__header">
+                    <img class="blog-img" src="{{ asset('assets/img/banner/hero1.webp') }}" alt="blog-card__image"
+                        class="blog-card__image" width="600">
+                </div>
+                <div class="blog-card__body">
+                    <span class="blog-tag blog-tag-blue">Technology</span>
+                    <h4>What's new in 2022 Tech</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
+                        doloribus.
+                        Doloremque, nihil! At ea atque quidem!</p>
+                </div>
+                <div class="blog-card__footer">
+                    <div class="blog-user">
+                        <img class="blog-img" src="" alt="blog-user__image" class="blog-user__image">
+                        <div class="blog-user__info">
+                            <h5>Jane Doe</h5>
+                            <small>2h ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

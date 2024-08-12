@@ -1,7 +1,8 @@
-<style>
-
-</style>
 <section>
+    <div class="section-title">
+        <h2>FAQ's</h2>
+        <p></p>
+    </div>
     <div class='faq'>
         <input id='faq-a' type='checkbox'>
         <label for='faq-a'>
