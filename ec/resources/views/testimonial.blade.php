@@ -10,27 +10,35 @@
             <div class="testimonial-slider-inner">
                 <!-- Slide-1 -->
                 <div class="testimonial-slide active text-center">
-                    <img src="https://i.ibb.co/8x9xK4H/team.jpg" alt="" class="testimonial-image">
-                    <h3>Alamin Musa</h3>
-                    <h4>Front End Developer</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.<br>
-                        Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                    <img src="{{ asset('assets/img/portfolio/logo/smsn.png') }}" alt="" class="testimonial-image">
+                    <h3>SMSN Foundation</h3>
+                    <h4>Website</h4>
+                    <p>Working with Element Coders was a game-changer for our business. They delivered our website
+                        on time, with impeccable attention to detail. The SEO-friendly design has significantly boosted
+                        our online visibility, and we're seeing more traffic than ever before. Their professionalism and
+                        expertise are truly unmatched.</p>
                 </div>
                 <!-- Slide-2 -->
                 <div class="testimonial-slide text-center">
-                    <img src="https://i.ibb.co/8x9xK4H/team.jpg" alt="" class="testimonial-image">
-                    <h3>2</h3>
-                    <h4>Front End Developer</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.<br>
-                        Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                    <img src="{{ asset('assets/img/portfolio/logo/gym.png') }}" alt=""
+                        class="testimonial-image">
+                    <h3>The Sweat Zone</h3>
+                    <h4>Logo Design</h4>
+                    <p>We needed a unique and straightforward logo that truly represented our brand, and Element Coders
+                        delivered beyond our expectations. The website and app they developed for us were not only
+                        aesthetically pleasing but also fully functional and user-friendly. Their ability to meet
+                        deadlines without compromising on quality is commendable.</p>
                 </div>
                 <!-- Slide-3 -->
                 <div class="testimonial-slide text-center">
-                    <img src="https://i.ibb.co/8x9xK4H/team.jpg" alt="" class="testimonial-image">
-                    <h3>3</h3>
-                    <h4>Front End Developer</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.<br>
-                        Fusce faucibus ligula scelerisque, eleifend turpis in</p>
+                    <img src="{{ asset('assets/img/portfolio/logo/revievqii.png') }}" alt=""
+                        class="testimonial-image">
+                    <h3>Revive Qii</h3>
+                    <h4>Logo Design</h4>
+                    <p>The team at Element Coders took the complexity out of our digital transformation. They
+                        created a stunning Logo, delivered on time. Their creativity in designing a simple yet impactful
+                        logo has given our brand a fresh
+                        and modern look. We couldn’t be happier with the results.</p>
                 </div>
             </div>
             <button class="testimonial-control-prev">

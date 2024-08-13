@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id();
     $table->string('main_heading');
     $table->string('main_image');
+    $table->string('category');
     $table->timestamps();
         });
         Schema::create('sub_contents', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('content_id')->constrained('blogs')->onDelete('cascade');
+            $table->foreignId('blog_id')->constrained('blogs')->onDelete('cascade'); // Ensure correct column name
             $table->string('subheading');
             $table->text('description');
             $table->string('sub_image')->nullable();

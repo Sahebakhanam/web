@@ -12,7 +12,27 @@
 </head>
 
 <body>
-    navigation bar
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="{{ route('dashboard') }}">Dashboard</a>
+                    </li>
+                    <li><a href="{{ route('addblogPage') }}" class="">Blog</a></li>
+                    <li><a href="{{ route('addfaq') }}" class="">FAQ's</a></li>
+                    <li><a href="{{ route('showcontact') }}" class="">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
     @yield('dashboard')
 </body>
 

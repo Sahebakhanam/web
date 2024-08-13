@@ -11,47 +11,63 @@ class BlogController extends Controller
 
     public function addblogPage()
     {
-       
-        return view('dashboard.addblog');
+    $blogs = Blog::orderBy('created_at', 'desc')->get();
+        return view('dashboard.addblog', ['blogs' => $blogs]);
     }
     public function storeContent(Request $request)
-    {
-        // Validate the form inputs
-        $request->validate([
-            'main_heading' => 'required|string|max:255',
-            'main_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'subheading.*' => 'required|string|max:255',
-            'description.*' => 'required|string',
-            'sub_image.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-        ]);
+{
 
-        $mainImagePath = $request->file('assets/blog_images')->store('images');
-        $blog = new Blog();  // Use Blog model instead of Content
-        $blog->main_heading = $request->input('main_heading');
-        $blog->main_image = $mainImagePath;
-        $blog->save();
+    $request->validate([
+        'main_heading' => 'required|string|max:255',
+        'main_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+        'category' => 'required|string',
+        'subheading.*' => 'required|string|max:255',
+        'description.*' => 'required|string',
+        'sub_image.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+    ]);
 
-        foreach ($request->subheading as $index => $subheading) {
-            $subImagePath = null;
-            if ($request->hasFile('sub_image.' . $index)) {
-                $subImagePath = $request->file('sub_image.' . $index)->store('images');
-            }
+    // Store the main image
+    $mainImageName = time() . '_' . $request->file('main_image')->getClientOriginalName();
+    $mainImagePath = $request->file('main_image')->move(public_path('assets/main_image'), $mainImageName);
 
-            $subContent = new SubContent();
-            $subContent->content_id = $blog->id;  // Reference Blog's id
-            $subContent->subheading = $subheading;
-            $subContent->description = $request->description[$index];
-            $subContent->sub_image = $subImagePath;
-            $subContent->save();
+    // Create the blog entry
+    $blog = Blog::create([
+        'main_heading' => $request->input('main_heading'),
+        'main_image' => 'assets/main_image/' . $mainImageName,
+    ]);
+
+    // Loop through each subheading and save the corresponding subcontent
+    foreach ($request->subheading as $index => $subheading) {
+        $subImagePath = null;
+        if ($request->hasFile('sub_image.' . $index)) {
+            $subImageName = time() . '_' . $request->file('sub_image.' . $index)->getClientOriginalName();
+            $subImagePath = $request->file('sub_image.' . $index)->move(public_path('assets/main_image'), $subImageName);
         }
 
-        return redirect()->back()->with('success', 'Content saved successfully!');
+        $subContent = new SubContent();
+        $subContent->blog_id = $blog->id; // Set the blog_id here
+        $subContent->subheading = $subheading;
+        $subContent->description = $request->description[$index];
+        $subContent->sub_image = $subImagePath;
+        $subContent->save();
     }
-    public function showBlogs()
+
+    return redirect()->back()->with('success', 'Content saved successfully!');
+}
+public function showBlog()
 {
-    $blogs = Blog::with('subContents')->get();
+    $blogs = Blog::orderBy('created_at', 'desc')->get();
+    return view('mainpages.blog', ['blogs' => $blogs]);
+}
+public function blog_detail($id)
+{
+    $blog = Blog::find($id);
 
-    return view('dashboard.showBlog', ['blogs' => $blog]);
+    if (!$blog) {
+        // Handle the case where the blog is not found
+        abort(404, 'Blog not found');
+    }
 
+    return view('mainpages.blog-detail', ['blog' => $blog]);
 }
 }

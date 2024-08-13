@@ -31,12 +31,13 @@
             <div class="about-content-wrapper">
                 <div class="solution_slider">
                     <div class="solution_gallery">
-                        <img src="assets/img/banner/home/appd.webp" alt="appdevelopment" />
-                        <img src="assets/img/banner/home/graphic.webp" alt="graphic design" />
-                        <img src="assets/img/banner/home/seo.webp" alt="SEO" />
-                        <img src="assets/img/banner/home/smm.webp" alt="smm" />
-                        <img src="assets/img/banner/home/ui.webp" alt="ui/ux" />
-                        <img src="assets/img/banner/home/websited.webp" alt="website-development" />
+
+                        <img src="{{ asset('assets/img/banner/home/appd.webp') }}" alt="appdevelopment" />
+                        <img src="{{ asset('assets/img/banner/home/graphic.webp') }}" alt="graphic design" />
+                        <img src="{{ asset('assets/img/banner/home/seo.webp') }}" alt="SEO" />
+                        <img src="{{ asset('assets/img/banner/home/smm.webp') }}" alt="smm" />
+                        <img src="{{ asset('assets/img/banner/home/ui.webp') }}" alt="ui/ux" />
+                        <img src="{{ asset('assets/img/banner/home/websited.webp') }}" alt="website-development" />
                     </div>
                 </div>
 
@@ -70,7 +71,7 @@
         <div class="services-container">
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service1.png" alt="website" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service1.png') }}" alt="website" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">Website Development</a>
@@ -85,7 +86,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service2.png" alt="app" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service2.png') }}" alt="app" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">App Development</a>
@@ -100,7 +101,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service3.png" alt="ecommerce" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service3.png') }}" alt="ecommerce" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">Ecommerce</a>
@@ -115,7 +116,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service4.png" alt="AI development" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service4.png') }}" alt="AI development" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">AI Development</a>
@@ -129,7 +130,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service5.png" alt="maintenance" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service5.png') }}" alt="maintenance" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">Maintenance & Support</a>
@@ -144,7 +145,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service6.png" alt="saas" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service6.png') }}" alt="saas" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">SaaS</a>
@@ -160,7 +161,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service7.png" alt="ui/ux" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service7.png') }}" alt="ui/ux" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">UI/UX Design</a>
@@ -175,7 +176,7 @@
 
             <div class="service-item">
                 <div class="icon">
-                    <img src="assets/img/icons/index-icon/service8.png" alt="Software Development" />
+                    <img src="{{ asset('assets/img/icons/index-icon/service8.png') }}" alt="Software Development" />
                 </div>
                 <h4>
                     <a href="service-details.html" class="stretched-link">Software Development</a>
@@ -195,7 +196,7 @@
     {{-- banner  --}}
     <section>
         <div class="banner-section container">
-            <img class="banner-image" src="assets/img/banner/vr.png" alt="banner" />
+            <img class="banner-image" src="{{ asset('assets/img/banner/vr.png') }}" alt="banner" />
         </div>
     </section>
 
@@ -209,16 +210,16 @@
             <div class="video_scroll_effect_1">
                 <div class="wrapper_1">
                     <div class="scroll-div">
-                        <img src="assets/img/logo/1.webp" alt="tech" />
-                        <img src="assets/img/logo/2.webp" alt="tech" />
-                        <img src="assets/img/logo/3.webp" alt="tech" />
-                        <img src="assets/img/logo/4.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/1.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/2.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/3.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/4.webp') }}" alt="tech" />
                     </div>
                     <div class="scroll-div">
-                        <img src="assets/img/logo/5.webp" alt="tech" />
-                        <img src="assets/img/logo/6.webp" alt="tech" />
-                        <img src="assets/img/logo/7.webp" alt="tech" />
-                        <img src="assets/img/logo/8.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/5.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/6.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/7.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/8.webp') }}" alt="tech" />
                     </div>
                 </div>
             </div>
@@ -226,18 +227,18 @@
             <div class="video_scroll_effect">
                 <div class="wrapper">
                     <div class="scroll-div"> <img src="assets/img/logo/12.webp" alt="tech" />
-                        <img src="assets/img/logo/13.webp" alt="tech" />
-                        <img src="assets/img/logo/14.webp" alt="tech" />
-                        <img src="assets/img/logo/15.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/13.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/14.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/15.webp') }}" alt="tech" />
                     </div>
                     <div class="scroll-div"><img src="assets/img/logo/16.webp" alt="tech" />
-                        <img src="assets/img/logo/17.webp" alt="tech" />
-                        <img src="assets/img/logo/18.webp" alt="tech" />
-                        <img src="assets/img/logo/19.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/17.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/18.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/19.webp') }}" alt="tech" />
                     </div>
                     <div class="scroll-div"> <img src="assets/img/logo/20.webp" alt="tech" />
-                        <img src="assets/img/logo/21.webp" alt="tech" />
-                        <img src="assets/img/logo/22.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/21.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/22.webp') }}" alt="tech" />
                     </div>
                 </div>
             </div>
@@ -246,18 +247,18 @@
             <div class="video_scroll_effect_1">
                 <div class="wrapper_1">
                     <div class="scroll-div"><img src="assets/img/logo/23.webp" alt="tech" />
-                        <img src="assets/img/logo/24.webp" alt="tech" />
-                        <img src="assets/img/logo/25.webp" alt="tech" />
-                        <img src="assets/img/logo/26.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/24.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/25.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/26.webp') }}" alt="tech" />
                     </div>
                     <div class="scroll-div"><img src="assets/img/logo/27.webp" alt="tech" />
-                        <img src="assets/img/logo/28.webp" alt="tech" />
-                        <img src="assets/img/logo/29.webp" alt="tech" />
-                        <img src="assets/img/logo/30.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/28.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/29.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/30.webp') }}" alt="tech" />
                     </div>
                     <div class="scroll-div"> <img src="assets/img/logo/31.webp" alt="tech" />
-                        <img src="assets/img/logo/32.webp" alt="tech" />
-                        <img src="assets/img/logo/33.webp" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/32.webp') }}" alt="tech" />
+                        <img src="{{ asset('assets/img/logo/33.webp') }}" alt="tech" />
                     </div>
                 </div>
             </div>
@@ -266,11 +267,25 @@
 
     {{-- technologies we serves ends  --}}
 
-    {{-- portfolio section  --}}
-
+    @include('portfolio')
     {{-- testimonial start  --}}
     @include('testimonial')
-    @include('faq-s')
+    <section id="faqs">
+        <h2 class="section-title">FAQ's</h2>
+        @foreach ($faqs as $faq)
+            <div class="faq">
+                <input id="faq-{{ $loop->index }}" type="checkbox">
+                <label for="faq-{{ $loop->index }}">
+                    <p class="faq-heading">{{ $faq->quetion }}</p>
+                    <div class="faq-arrow"></div>
+                    <p class="faq-text">{{ $faq->answer }}</p>
+                </label>
+            </div>
+        @endforeach
+
+        <!-- Pagination Links for FAQs -->
+        {{ $faqs->links() }}
+    </section>
     {{-- blog --}}
     <section>
         <div class="section-title">
@@ -278,28 +293,34 @@
             <p></p>
         </div>
         <div class="blog-container">
-            <div class="blog-card">
-                <div class="blog-card__header">
-                    <img class="blog-img" src="{{ asset('assets/img/banner/hero1.webp') }}" alt="blog-card__image"
-                        class="blog-card__image" width="600">
-                </div>
-                <div class="blog-card__body">
-                    <span class="blog-tag blog-tag-blue">Technology</span>
-                    <h4>What's new in 2022 Tech</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo
-                        doloribus.
-                        Doloremque, nihil! At ea atque quidem!</p>
-                </div>
-                <div class="blog-card__footer">
-                    <div class="blog-user">
-                        <img class="blog-img" src="" alt="blog-user__image" class="blog-user__image">
-                        <div class="blog-user__info">
-                            <h5>Jane Doe</h5>
-                            <small>2h ago</small>
+            @foreach ($blogs as $blog)
+                <div class="blog-card">
+                    <div class="blog-card__header">
+                        <img class="blog-img" src="{{ asset($blog->main_image) }}" alt="blog-card__image"
+                            class="blog-card__image" width="600">
+                    </div>
+                    <div class="blog-card__body">
+                        <span class="blog-tag blog-tag-blue">{{ $blog->category }}</span>
+                        <h4>{{ $blog->main_heading }}</h4>
+                        {{-- @foreach ($blog->subContents as $subContent)
+                            <p>{{ $blog->description }}</p>
+                        @endforeach --}}
+                    </div>
+                    <div class="blog-card__footer">
+                        <div class="blog-user">
+                            <div class="blog-user__info">
+                                <h5>By Element Coders</h5>
+                                <small>{{ $blog->created_at }}</small>
+                                <a href="{{ route('blog_detail', $blog->id) }}" class="btn btn-primary">Read
+                                    More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
+        </div>
+        <div class="blog-container">
+            <button><a href="{{ route('showBlogs') }}"> Read More</a></button>
         </div>
     </section>
 @endsection

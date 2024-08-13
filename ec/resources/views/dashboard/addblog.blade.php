@@ -1,9 +1,30 @@
 @extends('dashboard.dashboard')
 @section('dashboard')
     <section>
-        <form ction="/addblogPage" method="POST" enctype="multipart/form-data">
-            @csrf
+        <style>
+            td {
+                height: 50px;
+            }
 
+            td img {
+                height: 100%
+            }
+        </style>
+        <form action="{{ route('storeContent') }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div>
+                <label class="control-label">Service</label>
+                <select name="category" class="form-control">
+                    <option value="Web Development">Web Development</option>
+                    <option value="App Development">App Development</option>
+                    <option value="Ecommerce">Ecommerce</option>
+                    <option value="Saas">Saas</option>
+                    <option value="AI Development">AI Development</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Maintenance & Support">Maintanance & Support</option>
+                </select>
+            </div>
             <!-- Main Heading -->
             <div>
                 <label for="main_heading">Main Heading</label>
@@ -36,7 +57,48 @@
                 <button type="submit">Submit</button>
             </div>
         </form>
-
+        @if (!isset($blogs))
+            <p>Blogs variable is not set.</p>
+        @else
+            @if ($blogs->isEmpty())
+                <p>No blog details available.</p>
+            @else
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Blog ID</th>
+                            <th>Category</th>
+                            <th>Main Heading</th>
+                            <th>Main Image</th>
+                            <th>Subheading</th>
+                            <th>Description</th>
+                            <th>Sub Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($blogs as $blog)
+                            <tr>
+                                <td>{{ $blog->id }}</td>
+                                <td>{{ $blog->category }}</td>
+                                <td>{{ $blog->main_heading }}</td>
+                                <td><img src="{{ $blog->main_image }}" alt="main-image"></td>
+                                @foreach ($blog->subContents as $subContent)
+                                    <td>{{ $subContent->subheading }}</td>
+                                    <td>{{ $subContent->description }}</td>
+                                    <td>
+                                        @if ($subContent->sub_image)
+                                            <img src="{{ $subContent->sub_image }}" alt="sub-image">
+                                        @else
+                                            No image
+                                        @endif
+                                    </td>
+                            </tr>
+                        @endforeach
+            @endforeach
+            </tbody>
+            </table>
+        @endif
+        @endif
     </section>
 
     <script>

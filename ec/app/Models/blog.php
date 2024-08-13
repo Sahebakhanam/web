@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class blog extends Model
 {
-    protected $fillable = ['main_heading', 'main_image'];
+    protected $fillable = ['main_heading', 'main_image', 'category'];
     
     public function subContents()
     {
