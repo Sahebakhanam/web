@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ec</title>
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="{{ asset('assets/img/logo/logo-white.png') }}" type="image/x-icon">
 
@@ -65,6 +67,11 @@
                                 class="img-fluid animated" alt="hero-img" />
                         </a>
                     </div>
+                    <div class="footer-call-to-action">
+                        <h2 class="footer-call-to-action-title"> You Call Us</h2>
+                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                                href="tel:0124-64XXXX" target="_self"> +91-98877-10153 </a></p>
+                    </div>
                 </div>
                 <div class="footer-content-column">
                     <div class="footer-menu">
@@ -111,15 +118,11 @@
                 </div>
                 <div class="footer-content-column">
                     <div class="footer-call-to-action">
-                        <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+                        {{-- <h2 class="footer-call-to-action-title"> Let's Chat</h2> --}}
                         <p class="footer-call-to-action-description"> Have a support question?</p>
                         <a href="{{ route('contactPage') }}"><button>Get in Touch</button></a>
                     </div>
-                    <div class="footer-call-to-action">
-                        <h2 class="footer-call-to-action-title"> You Call Us</h2>
-                        <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
-                                href="tel:0124-64XXXX" target="_self"> +91-98877-10153 </a></p>
-                    </div>
+
                 </div>
                 <div class="footer-social-links"> <svg class="footer-social-amoeba-svg"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">

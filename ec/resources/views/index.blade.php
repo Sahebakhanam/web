@@ -194,7 +194,7 @@
 
     {{-- service section ends  --}}
     {{-- banner  --}}
-    <section>
+    <section class="banner-section">
         <div class="banner-section container">
             <img class="banner-image" src="{{ asset('assets/img/banner/vr.png') }}" alt="banner" />
         </div>
