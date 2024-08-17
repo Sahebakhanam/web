@@ -120,6 +120,7 @@ p {
 }
 .section-title {
     margin: 0%;
+    padding: 5% 0%;
     text-align: center;
     color: var(--accent-color);
     font-size: 25px;
@@ -1240,8 +1241,9 @@ button:hover {
 .footer-content {
     margin-left: auto;
     margin-right: auto;
+    display: flex;
     max-width: 1230px;
-    padding: 40px 15px 450px;
+    padding: 40px 15px 15px;
     position: relative;
 }
 
