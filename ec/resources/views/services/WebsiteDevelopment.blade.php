@@ -84,8 +84,8 @@
             </div>
             <!-- banner section  -->
             <!-- <div class="company-values">
-                                                                                                                                                <img src="../assets/img/banner/values.png" alt="values" />
-                                                                                                                                              </div> -->
+                                                                                                                                                        <img src="../assets/img/banner/values.png" alt="values" />
+                                                                                                                                                      </div> -->
         </section>
         <!-- technology row  -->
         <section class="technologies">

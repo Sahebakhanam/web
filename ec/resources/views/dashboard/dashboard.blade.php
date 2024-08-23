@@ -8,6 +8,8 @@
     <title>ec</title>
     <link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" href="{{ asset('assets/img/logo/logo-white.png') }}" type="image/x-icon">
+
 
 </head>
 

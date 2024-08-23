@@ -1,6 +1,6 @@
 @extends('dashboard.dashboard')
 @section('dashboard')
-    <section>
+    <x-app-layout>
         <x-slot name="header">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 {{ __('Dashboard') }}
@@ -16,11 +16,5 @@
                 </div>
             </div>
         </div>
-        {{-- <form method="POST" action="{{ url('/logout') }}" class="mt-4">
-            @csrf
-            <button type="submit">
-                Logout
-            </button>
-        </form> --}}
-    </section>
+    </x-app-layout>
 @endsection

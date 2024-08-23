@@ -90,7 +90,7 @@
                         <ul id="menu-legal" class="footer-menu-list">
                             <li
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
-                                <a href="{{ route('privacyPolicy') }}">Privacy Notice</a>
+                                <a href="{{ route('privacyPolicy') }}">Privacy Policy</a>
                             </li>
                         </ul>
                     </div>
